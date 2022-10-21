@@ -7,7 +7,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     minitest (5.15.0)
+    pdf-core (0.9.0)
+    prawn (2.4.0)
+    pdf-core (~> 0.9.0)
+    ttfunk (~> 1.7)
     rake (13.0.6)
+    ttfunk (1.7.0)
+
 
 PLATFORMS
   x64-mingw-ucrt
@@ -15,6 +21,7 @@ PLATFORMS
 DEPENDENCIES
   jsdg!
   minitest (~> 5.0)
+  prawn (~> 2.4)
   rake (~> 13.0)
 
 BUNDLED WITH
