@@ -76,12 +76,13 @@ module Jsdg
   end
 
   def genHeader(name, topic)
-    # TODO Сюзанна
+    res = "MINISTRY OF EDUCATION AND SCIENCE OF RUSSIA\n\nFederal State Autonomous Educational Institution of Higher Education \"Southern Federal University\"\n\n
+I.I. Vorovich Institute of Mathematics, Mechanics and Computer Sciences\n\nDirection of training
+\n02.03.02 — Fundamental Informatics and information technologies\n" + "PRACTICE REPORT\nMUAM JAVA\n" + topic
+    + "\n\n3-year student\n" + name
 
-    # Используя константу выше сгенироровать текст титульника и вернуть его в виде строки
-    throw NotImplementedError
+    res
   end
-
   def importJavaFile(path)
     # TODO Мария
 
