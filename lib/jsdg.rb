@@ -37,24 +37,22 @@ module Jsdg
   end
 
   def build()
-    puts "Введите название документа и путь к нему: "
-    title = gets
-    puts "Введите ваше ФИО: "
-    name = gets
-    puts "Введите название задания: "
-    topic = gets
+    puts "Type path and title of document: "
+    title = gets.chomp
+    puts "Type your FIO: "
+    name = gets.chomp
+    puts "Type the title of report: "
+    topic = gets.chomp
 
     paths = getFiles
 
     Prawn::Document.generate title do |pdf|
 
-      # self here is left alone
-      pdf.font "Times-Roman"
-      pdf.draw_text genHeader(name, topic), :size => 14
+      pdf.text genHeader(name, topic), :size => 14
 
       for path in paths
-        pdf.draw_text importJavaFile(path), :size => 12
-        pdf.draw_text Enters, :size => 12
+        pdf.text importJavaFile(path), :size => 12
+        pdf.text Enters, :size => 12
       end
 
 
@@ -64,12 +62,12 @@ module Jsdg
   def getFiles()
     paths = []
 
-    puts 'Вводите названия Java файлов для импорта (для прерывания введите простую строку)'
-    path = gets
-    while path != ''
-      paths.include path
+    puts 'Type names of Java files for import (\'exit\' to exit)'
+    path = gets.chomp
+    until path === "exit"
+      paths.push path
 
-      path = gets
+      path = gets.chomp
     end
 
     paths
