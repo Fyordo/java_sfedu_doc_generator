@@ -84,9 +84,11 @@ I.I. Vorovich Institute of Mathematics, Mechanics and Computer Sciences\n\nDirec
     res
   end
   def importJavaFile(path)
-    # TODO Мария
+    file = File.open(path)
 
-    # Проверить, что такой файл существует, прочитать из него текст и вернуть его в виде строки
-    throw NotImplementedError
+    data = file.read
+
+    file.close
+    data
   end
 end
