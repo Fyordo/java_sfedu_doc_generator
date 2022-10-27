@@ -1,8 +1,8 @@
 # Jsdg
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jsdg`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem will help poor SFEDU students to generate pdf-reports with Java files from MUAM
 
-TODO: Delete this and the text above, and describe your gem
+Due to the limited documentation, this is avaliable only in english language, so, please, don't use other languages
 
 ## Installation
 
@@ -16,7 +16,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+In Jsdg Module you'll need to know only about the `Jsdg.build` function.
+It has no arguments, all the interaction is made through the console
+You'll need to type the title of the document, your FIO (**IN ENGLISH!!**), the title of the report (**AGAIN IN ENGLISH!!**) and full-paths to Java files (example: `D:\path\to\Exxample.java`)
 
 ## Development
 
