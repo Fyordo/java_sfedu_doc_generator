@@ -1,19 +1,18 @@
 PATH
   remote: .
   specs:
-    jsdg (0.1.0)
+    jsdg (1.0.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    minitest (5.15.0)
+    minitest (5.16.3)
     pdf-core (0.9.0)
     prawn (2.4.0)
-    pdf-core (~> 0.9.0)
-    ttfunk (~> 1.7)
+      pdf-core (~> 0.9.0)
+      ttfunk (~> 1.7)
     rake (13.0.6)
     ttfunk (1.7.0)
-
 
 PLATFORMS
   x64-mingw-ucrt
@@ -25,4 +24,4 @@ DEPENDENCIES
   rake (~> 13.0)
 
 BUNDLED WITH
-   2.3.23
+   2.3.13

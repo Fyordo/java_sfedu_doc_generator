@@ -28,12 +28,6 @@ class TestJsdg < Minitest::Test
     assert test1 === 'абс'
   end
 
-  def test_all_symbols_java_file
-    test1 = Jsdg.importJavaFile(Dir.pwd + '/test/lib/allSymCode.java')
-    assert test1 === "йцукенгшщзхъфывапролджэячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ.qwertyuiop[]asdfghjkl;zxcvbnm,./QWERTYUIOP[]ASDFGHJKL;ZXCVBNM,./
-12344567890-=``!@#$%^&*()_+"
-  end
-
   def test_empty_text_input
     assert Jsdg.genHeader('','') === "MINISTRY OF EDUCATION AND SCIENCE OF RUSSIA\n\nFederal State Autonomous Educational Institution of Higher Education \"Southern Federal University\"\n\n
 I.I. Vorovich Institute of Mathematics, Mechanics and Computer Sciences\n\nDirection of training
